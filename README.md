@@ -101,8 +101,7 @@ A few highlights from my portfolio:
 
 ## 🔗 Connect With Me
 - 🌐 **Portfolio**: [https://upload-hssu.onrender.com](https://upload-hssu.onrender.com)  
-- 💼 **LinkedIn**: _(Add link here)_  
-- 🐙 **GitHub**: _(Add link here)_  
+
 
 ---
 
