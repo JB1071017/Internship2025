@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Policy Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea { min-height: 100px; }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #2980b9; }
+        .policy-output {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            white-space: pre-wrap;
+        }
+        .actions { margin-top: 20px; display: flex; gap: 10px; }
+        .loading { display: none; text-align: center; margin: 20px 0; }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Security Policy Generator</h1>
+        
+        <form id="policyForm">
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" placeholder="Enter your company name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="industry">Industry</label>
+                <select id="industry" required>
+                    <option value="technology">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="retail">Retail</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="policyScope">Policy Scope</label>
+                <textarea id="policyScope" placeholder="Describe what systems this policy covers" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="complianceRequirements">Compliance Requirements</label>
+                <textarea id="complianceRequirements" placeholder="GDPR, HIPAA, PCI-DSS, etc."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="specialRequirements">Special Requirements</label>
+                <textarea id="specialRequirements" placeholder="Any additional requirements"></textarea>
+            </div>
+            
+            <button type="button" id="generateBtn">Generate Security Policy</button>
+        </form>
+        
+        <div class="loading" id="loadingIndicator">
+            <div class="spinner"></div>
+            <p>Generating your 3-page security policy...</p>
+        </div>
+        
+        <div class="policy-output" id="policyOutput" style="display: none;"></div>
+        
+        <div class="actions" id="actionButtons" style="display: none;">
+            <button id="downloadBtn">Download as DOC</button>
+            <button id="regenerateBtn">Regenerate</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('generateBtn').addEventListener('click', generatePolicy);
+        document.getElementById('regenerateBtn').addEventListener('click', generatePolicy);
+        document.getElementById('downloadBtn').addEventListener('click', downloadPolicy);
+        
+        async function generatePolicy() {
+            const companyName = document.getElementById('companyName').value;
+            const industry = document.getElementById('industry').value;
+            const policyScope = document.getElementById('policyScope').value;
+            const complianceRequirements = document.getElementById('complianceRequirements').value || 'None';
+            const specialRequirements = document.getElementById('specialRequirements').value || 'None';
+            
+            // Show loading, hide output
+            document.getElementById('policyOutput').style.display = 'none';
+            document.getElementById('actionButtons').style.display = 'none';
+            document.getElementById('loadingIndicator').style.display = 'block';
+            
+            try {
+                const response = await fetch('/spg/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        companyName,
+                        industry,
+                        policyScope,
+                        complianceRequirements,
+                        specialRequirements
+                    })
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Failed to generate policy');
+                }
+                
+                const result = await response.json();
+                document.getElementById('policyOutput').textContent = result.policy;
+                document.getElementById('policyOutput').style.display = 'block';
+                document.getElementById('actionButtons').style.display = 'flex';
+                
+                // Store data for download
+                document.getElementById('downloadBtn').dataset.company = companyName;
+                document.getElementById('downloadBtn').dataset.content = result.policy;
+                
+                document.getElementById('policyOutput').scrollIntoView({ behavior: 'smooth' });
+            } catch (error) {
+                console.error('Generation error:', error);
+                alert(`Error: ${error.message}\nCheck console for details.`);
+            } finally {
+                document.getElementById('loadingIndicator').style.display = 'none';
+            }
+        }
+        
+        function downloadPolicy() {
+            const companyName = document.getElementById('downloadBtn').dataset.company;
+            const content = document.getElementById('downloadBtn').dataset.content;
+            
+            // Create a blob and download
+            const blob = new Blob([content], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${companyName.replace(/\s+/g, '_')}_Security_Policy.docx`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
