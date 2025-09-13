@@ -1,0 +1,1001 @@
+tool_name,vulnerability_type,cwe_id,cvss_score,raw_severity,lines_in_function,cyclomatic_complexity,is_core_module,requires_auth,exposed_to_internet,description_length,priority,remediation_plan
+Bandit,Path Traversal,584,0.1,High,433,15,1,1,0,140,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,60,2.4,Low,245,46,0,0,1,641,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,430,9.8,Low,320,25,0,0,0,452,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Path Traversal,985,8.0,High,317,21,1,1,0,847,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,RCE,657,9.6,Critical,413,24,1,0,0,768,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,CSRF,605,4.9,Medium,295,5,1,0,0,441,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,309,1.1,Critical,128,6,1,1,0,713,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,520,5.5,Medium,344,49,0,0,1,506,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,591,4.5,Critical,282,43,1,0,1,412,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,27,8.4,Low,17,48,1,0,0,332,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,CSRF,686,1.0,High,71,44,0,1,1,219,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,562,4.9,High,269,47,1,1,1,624,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,199,1.5,Low,325,23,1,0,1,338,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,387,3.2,Medium,282,4,0,1,1,381,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,349,7.4,Medium,305,27,1,1,1,469,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,960,4.8,Medium,451,18,1,1,1,142,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,940,3.8,Low,7,21,1,0,0,844,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,693,3.9,Medium,314,28,1,0,1,660,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,536,4.6,Low,305,35,1,1,1,130,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,828,7.9,Critical,103,22,1,0,1,615,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,SSRF,378,8.9,Critical,309,40,0,0,0,461,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,SQL Injection,899,9.6,Low,193,23,1,0,1,974,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,XSS,916,7.9,High,241,3,0,0,1,138,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,558,3.2,Critical,62,40,0,0,1,100,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Hardcoded Secret,527,6.9,Medium,17,10,0,1,0,613,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,153,4.4,Low,171,25,0,0,1,584,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,734,2.5,Medium,25,49,1,0,0,38,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,206,8.4,Medium,251,8,1,0,1,731,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,CSRF,455,0.4,High,253,11,1,1,0,533,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,273,9.0,Medium,387,5,0,1,0,342,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,894,4.6,High,207,45,1,1,0,306,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,236,6.4,Critical,29,37,1,0,1,139,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,852,6.6,Low,117,45,1,1,0,302,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,740,9.0,Medium,491,38,0,1,0,182,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,521,6.4,Low,416,29,0,1,0,729,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,678,6.1,Medium,282,5,1,1,0,953,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,SQL Injection,944,0.7,Low,380,9,0,0,1,33,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,956,5.2,Medium,144,48,0,1,1,108,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SQL Injection,831,1.5,Medium,25,2,1,1,1,415,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,726,7.4,Medium,310,1,0,0,1,365,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,501,5.1,Medium,156,40,0,0,0,148,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,SQL Injection,117,6.8,Medium,73,30,1,1,1,512,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,386,0.4,Medium,120,11,0,0,0,835,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,344,0.8,Medium,312,28,0,1,1,183,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,584,7.2,Medium,321,44,0,0,1,38,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,395,0.7,Medium,93,12,0,0,1,940,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,64,0.7,Low,86,39,0,1,0,505,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,717,0.1,High,336,26,0,0,1,664,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,721,9.6,Medium,425,13,0,1,1,837,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,72,7.4,High,499,8,0,0,1,360,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,RCE,789,3.5,Medium,364,28,1,1,0,563,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,274,3.0,Medium,435,30,1,0,1,308,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,990,3.5,Low,118,9,1,0,1,729,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,320,7.7,Critical,233,39,1,0,0,851,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,338,6.6,Critical,199,31,0,0,0,954,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,366,1.9,Low,206,21,1,0,1,201,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,495,1.7,High,413,47,1,1,1,681,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,607,1.0,Critical,339,34,0,0,1,73,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,166,6.6,Low,147,31,0,1,0,764,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,XSS,544,7.6,Low,450,25,0,1,0,779,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,11,2.7,Critical,425,12,0,1,0,673,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,301,0.2,High,429,1,0,0,1,224,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,729,0.8,Low,271,22,1,1,0,843,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,801,9.7,Medium,387,40,0,0,1,175,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,102,3.0,High,139,37,1,1,0,552,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,425,7.7,High,181,47,1,1,0,892,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,392,6.2,Critical,430,1,0,1,0,241,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,RCE,779,3.8,Critical,30,1,1,1,1,803,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,214,2.1,Medium,57,42,1,1,1,550,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,691,1.2,Low,232,42,0,0,1,204,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,88,6.2,Critical,146,21,1,1,1,515,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,553,7.7,Critical,435,15,1,1,0,343,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,401,6.4,High,384,17,1,0,1,777,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,SSRF,588,5.3,Critical,48,22,0,0,0,802,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,889,0.4,Critical,194,38,0,0,1,313,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Hardcoded Secret,46,9.7,Critical,224,35,0,1,1,842,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,SSRF,672,8.0,Critical,136,45,1,1,0,446,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,463,2.9,High,22,16,0,1,0,332,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,592,9.8,Medium,6,8,1,1,1,511,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,RCE,310,6.0,Medium,204,47,0,1,1,867,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,86,5.8,Low,239,17,1,1,0,923,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,92,7.5,Critical,185,17,0,0,0,402,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,CSRF,660,8.1,High,360,26,0,0,0,815,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,XSS,673,6.6,Low,292,13,1,1,0,608,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,714,1.3,Low,335,17,0,1,0,158,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,936,3.4,Medium,220,38,1,1,1,770,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,928,9.3,High,116,17,0,1,1,842,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,SQL Injection,242,2.2,High,313,48,0,1,1,414,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,865,3.7,High,49,14,1,0,1,292,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,2,4.3,Medium,173,45,1,0,0,371,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,225,4.4,Medium,82,6,1,1,0,388,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,801,6.1,Medium,322,35,0,0,0,207,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,745,9.4,Medium,333,46,1,1,1,565,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,973,2.4,Medium,45,14,0,1,0,365,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,926,1.2,Critical,335,47,1,1,0,549,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,929,2.0,Critical,20,8,1,0,1,438,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,589,8.9,High,448,15,1,0,1,26,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,SQL Injection,116,6.5,Low,221,27,1,1,1,648,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,666,2.9,High,123,13,1,0,0,388,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,918,8.2,Low,234,49,1,0,0,689,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,103,8.6,Medium,221,31,0,1,1,515,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,194,8.5,Low,323,35,1,0,1,765,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,Hardcoded Secret,166,9.2,High,339,6,0,0,0,908,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,RCE,871,2.5,High,3,5,1,1,1,85,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,90,7.6,Low,182,22,1,1,0,240,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,686,4.6,Critical,206,49,1,0,1,725,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,122,8.4,Medium,320,23,0,1,1,971,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Hardcoded Secret,143,7.3,Medium,40,25,0,0,1,257,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,994,7.8,High,59,34,1,1,0,311,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,106,6.6,Critical,439,26,0,1,0,735,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,887,1.8,Low,62,47,1,1,1,224,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,CSRF,428,5.5,Medium,132,5,1,1,0,167,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SQL Injection,305,9.8,Critical,60,26,0,0,1,78,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,872,9.4,Medium,372,20,0,1,1,402,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,XSS,971,0.4,Critical,331,6,0,1,0,94,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,317,1.6,Critical,122,6,0,1,0,276,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,963,1.3,High,479,18,1,0,0,78,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,635,7.3,Medium,107,4,0,0,0,620,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,SSRF,902,8.2,Low,96,17,0,1,1,356,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,Hardcoded Secret,9,2.1,High,347,14,1,1,0,971,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,774,5.1,High,414,14,0,1,0,737,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,73,8.4,Low,235,13,0,1,1,936,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,SQL Injection,359,7.3,High,386,7,0,1,1,682,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,223,5.4,Critical,62,44,0,1,1,432,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Path Traversal,416,5.9,Critical,256,15,1,0,1,615,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Path Traversal,553,5.1,Medium,49,19,1,1,0,183,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,SQL Injection,370,3.0,Medium,393,43,0,1,0,686,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,716,5.7,Low,348,47,0,1,1,124,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,264,6.9,Medium,159,44,1,1,1,229,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,840,8.7,Critical,124,35,0,1,0,965,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,690,6.4,Low,482,17,0,1,0,40,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Path Traversal,860,7.6,Low,317,35,0,0,0,532,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,XSS,318,1.6,Medium,207,19,0,0,0,352,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,84,4.6,Critical,48,20,0,0,0,386,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,318,0.1,Low,409,36,0,0,1,139,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,111,2.5,Critical,420,35,0,0,1,626,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,251,7.3,Critical,136,32,0,0,1,548,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Hardcoded Secret,383,9.9,Critical,201,48,0,1,1,748,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,SSRF,7,1.0,Medium,250,44,1,1,0,11,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,459,4.0,High,314,40,1,1,1,880,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,84,8.0,High,357,24,1,1,0,110,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,208,2.0,Low,368,17,0,1,0,542,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,900,5.6,Critical,429,7,0,1,0,67,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,390,7.3,Medium,318,43,1,0,0,398,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,314,6.2,Critical,295,1,0,1,0,701,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,22,1.9,Critical,480,35,1,0,0,950,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Path Traversal,410,3.6,Medium,314,32,0,0,0,350,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,RCE,895,7.8,High,209,36,1,1,1,870,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,515,5.5,Critical,355,13,1,1,0,29,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,127,0.1,Critical,485,6,1,1,1,264,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,809,7.6,High,211,14,0,1,1,326,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,Path Traversal,700,0.4,Medium,192,37,1,1,0,47,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,874,7.5,Low,44,48,0,1,0,669,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,14,2.0,High,29,15,0,1,1,546,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,971,9.6,Low,59,47,0,0,1,395,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,978,3.7,Low,71,4,0,1,1,642,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,12,3.3,High,92,40,0,1,1,937,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,87,1.5,Critical,265,16,0,0,0,35,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,524,3.1,Low,383,28,0,1,0,463,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,909,8.8,Low,220,16,1,1,0,690,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,537,10.0,Medium,390,4,1,0,1,332,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Path Traversal,301,3.7,Critical,413,45,1,1,0,746,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,243,4.5,Low,442,26,0,1,1,522,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,122,7.2,Medium,401,28,0,1,0,828,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,147,8.9,Critical,400,32,0,1,1,782,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SSRF,567,5.9,High,215,45,0,1,0,22,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,750,3.9,High,479,2,1,1,0,924,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,356,4.1,Medium,387,31,0,0,1,917,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,685,7.0,High,277,3,1,1,1,569,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,904,0.0,Low,64,8,0,1,1,930,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,733,6.2,Critical,346,24,1,0,1,834,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,631,3.6,Low,292,15,0,0,1,380,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,309,7.9,Low,490,43,1,1,0,300,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,695,0.9,High,485,31,0,0,1,341,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,288,5.9,Low,245,9,1,1,0,615,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,307,4.8,High,470,39,0,1,0,270,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Path Traversal,812,6.4,Critical,62,45,1,0,0,799,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,CSRF,594,0.6,Critical,426,2,1,1,0,880,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,966,5.8,Low,332,8,0,1,0,214,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,914,5.6,Medium,170,7,1,0,1,706,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,723,5.6,High,445,44,0,0,1,696,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,RCE,662,6.0,High,269,39,0,0,0,959,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,549,6.8,Low,267,42,0,0,0,396,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,352,8.0,High,54,16,1,1,1,901,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Path Traversal,312,2.7,High,16,35,1,0,1,830,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,CSRF,873,8.3,Medium,8,30,0,0,0,477,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,CSRF,59,5.0,Medium,104,10,0,0,1,424,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,RCE,643,0.8,Low,59,38,1,0,1,78,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,924,0.6,Medium,313,18,1,0,1,481,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,714,3.3,Low,40,5,1,1,0,113,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Path Traversal,755,7.8,Critical,237,29,0,0,1,767,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Hardcoded Secret,35,7.1,Low,443,39,0,1,0,170,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,445,7.9,Critical,386,34,0,0,0,209,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,93,5.2,Low,94,43,0,0,0,225,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,CSRF,950,4.4,High,222,45,0,0,0,955,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,XSS,959,1.5,Medium,204,23,1,0,0,221,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,207,3.3,Critical,138,5,0,0,1,517,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,353,4.3,Low,300,30,1,0,0,25,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,903,0.9,Medium,395,6,1,0,0,507,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,332,2.2,Low,207,46,0,0,0,893,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,817,6.0,Medium,336,44,1,1,1,341,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,862,7.4,Medium,81,4,0,0,1,726,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,725,10.0,Low,218,29,1,1,1,886,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,159,9.3,Critical,2,23,0,0,1,560,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,SSRF,954,6.4,Critical,178,6,0,1,1,610,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,957,4.2,High,396,32,1,0,1,951,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Path Traversal,24,6.4,Medium,371,42,0,0,1,265,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,XSS,404,7.9,High,346,18,1,0,0,775,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,805,1.2,High,279,15,0,1,0,737,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,516,4.1,Low,146,40,0,1,1,889,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,732,8.4,Low,318,32,0,1,0,824,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,XSS,364,3.8,Low,224,9,1,1,0,181,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,382,5.7,Medium,369,37,1,0,1,658,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,532,5.9,Low,384,10,0,0,0,507,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,956,1.8,Low,62,20,1,0,0,480,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,152,3.6,Medium,294,6,0,1,1,393,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,562,3.3,Medium,239,48,1,0,0,699,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,689,0.3,Critical,195,3,1,1,1,598,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,947,0.2,Low,166,42,0,1,1,709,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,608,8.3,Low,451,11,0,1,0,516,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,617,2.7,Low,222,43,0,1,0,536,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,420,5.2,Critical,61,17,0,1,0,813,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,CSRF,250,3.0,Low,129,32,0,0,1,840,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,CSRF,117,9.4,Critical,478,4,1,1,1,334,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,866,2.6,High,173,4,1,1,1,223,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,512,4.3,Critical,480,17,0,0,0,217,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,740,8.7,High,156,41,0,1,0,178,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,XSS,578,8.4,Low,405,19,0,1,1,339,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,335,1.9,High,378,5,1,0,0,289,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,418,8.0,Critical,110,32,0,0,0,987,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,932,4.6,Medium,269,22,0,0,1,314,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,XSS,774,4.8,High,411,6,1,1,1,155,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,295,1.3,High,356,35,1,0,0,784,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,938,0.8,Low,391,22,1,0,1,525,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,755,7.3,Critical,278,1,1,0,0,99,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,371,5.0,High,74,20,0,1,1,462,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,186,4.4,High,487,22,1,0,1,69,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,246,7.3,High,437,48,1,1,1,320,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,637,7.7,High,463,11,0,1,0,537,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,268,1.6,Medium,207,13,0,0,0,236,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,643,6.1,Critical,388,42,0,1,1,483,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SQL Injection,237,1.4,Low,480,3,1,1,1,987,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,530,7.5,Low,279,9,0,0,1,550,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,RCE,552,6.6,Medium,375,12,1,1,0,672,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,21,9.6,Critical,326,23,1,0,1,766,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,XSS,911,0.7,High,472,14,1,1,1,791,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,737,0.6,Medium,340,33,0,1,1,88,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,867,2.8,Critical,357,18,1,0,1,442,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SSRF,794,2.6,High,340,49,0,0,0,810,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,520,2.5,Medium,204,41,0,1,0,162,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,100,9.1,Critical,161,9,0,1,1,798,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,752,2.5,Low,28,23,1,0,0,410,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,478,2.7,Low,392,10,1,1,0,288,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,599,7.6,Critical,257,19,1,1,0,66,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,298,4.5,Low,165,47,0,1,1,986,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,940,7.8,Critical,63,5,1,1,0,195,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,526,0.7,High,22,47,1,0,0,407,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,RCE,334,4.9,Critical,70,23,1,0,0,614,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,2,0.3,High,381,30,1,0,1,797,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SQL Injection,375,0.6,Medium,405,25,1,0,1,167,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,293,9.1,Critical,96,28,0,0,0,796,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,837,1.4,Medium,163,34,0,0,0,702,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,934,5.3,Low,79,45,0,1,1,368,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,553,4.1,High,5,48,0,0,1,449,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SQL Injection,318,3.5,Critical,316,47,1,1,0,598,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,502,9.0,Medium,120,25,0,1,0,475,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,XSS,828,0.2,High,302,10,1,1,1,672,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,381,6.6,High,178,14,0,0,1,455,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,623,9.6,Low,176,42,0,1,0,759,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,Path Traversal,14,5.6,Low,390,46,0,0,1,810,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,CSRF,504,9.4,High,217,30,1,1,0,752,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,231,0.5,High,56,41,1,1,0,497,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,985,4.2,Critical,366,25,0,0,0,539,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,84,2.6,High,187,14,1,1,1,82,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,130,7.3,Critical,232,35,0,1,0,938,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,743,9.8,High,255,48,0,1,0,937,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,838,2.6,Low,413,34,0,1,1,710,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,145,6.5,Critical,455,10,1,0,1,959,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,891,2.0,Medium,104,35,0,1,0,26,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,857,5.7,Low,77,11,0,1,0,540,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,28,4.6,Critical,230,11,0,0,1,740,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,66,9.7,Critical,402,21,1,1,1,335,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,163,6.1,Medium,258,21,0,1,1,641,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,229,3.5,Critical,264,22,1,1,0,622,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,261,1.1,High,331,45,0,1,0,555,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,449,1.5,Medium,481,7,1,0,0,605,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,424,2.3,Low,182,17,0,1,1,930,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,460,2.5,Low,381,2,0,0,0,717,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,952,8.5,High,256,12,1,1,1,851,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,676,5.6,Low,38,42,1,1,0,211,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,CSRF,301,5.2,Critical,176,18,0,1,1,353,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SSRF,919,1.1,Critical,27,11,1,0,0,862,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,303,8.6,High,276,16,0,1,0,532,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,287,7.2,Low,140,49,0,1,1,868,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,395,0.7,Low,299,18,0,0,1,409,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,10,7.1,High,445,35,1,0,0,227,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,707,5.4,Medium,287,26,0,0,1,454,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Hardcoded Secret,630,0.8,Low,91,16,1,0,1,774,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,270,4.6,Medium,480,6,0,1,0,231,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,592,4.8,Low,61,44,1,1,1,392,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,970,1.7,Low,458,43,1,1,0,890,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,605,9.5,Low,451,47,0,1,0,601,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,778,8.5,Low,365,47,1,0,1,16,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,844,6.7,Critical,347,48,0,1,1,281,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,862,4.6,Medium,163,42,0,1,0,748,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,361,4.1,Medium,351,12,0,1,0,25,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,257,6.5,Low,143,13,0,1,0,433,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,SQL Injection,133,5.5,Low,400,4,0,0,0,533,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,276,0.6,Medium,253,39,1,1,0,812,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,776,5.1,Critical,269,2,0,1,0,762,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SSRF,683,8.1,High,369,26,1,1,1,30,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,SSRF,972,4.6,High,291,27,1,0,1,699,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,513,0.5,Medium,459,27,0,0,1,948,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,Path Traversal,313,7.9,Low,187,15,1,1,0,237,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,RCE,576,2.0,Low,405,8,0,1,1,794,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,886,2.6,Critical,499,7,1,1,0,297,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,980,1.6,High,438,47,1,0,0,818,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,SQL Injection,284,3.3,Critical,459,46,1,1,1,143,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,121,7.6,High,414,40,0,1,0,993,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,107,5.2,Medium,304,12,1,1,0,292,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,933,2.0,High,291,13,0,0,0,413,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Hardcoded Secret,687,8.8,Critical,86,43,1,1,0,674,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,Hardcoded Secret,997,8.8,Critical,166,17,1,1,0,75,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Hardcoded Secret,204,8.7,Critical,415,17,1,0,0,658,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,SSRF,165,2.4,Medium,462,36,1,0,1,613,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,305,4.5,High,408,21,0,1,0,446,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,497,9.8,High,114,8,0,0,0,838,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,632,7.7,Critical,433,5,1,1,0,943,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,556,0.3,High,480,26,1,0,0,268,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,824,0.7,Low,356,16,0,0,1,989,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,156,4.6,Low,416,36,0,1,1,975,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,367,9.1,Low,183,28,0,1,0,112,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,XSS,719,5.4,High,207,29,0,1,0,576,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,902,5.0,Medium,256,47,1,0,0,778,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,620,1.1,Medium,235,12,1,1,1,110,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,251,6.6,Medium,442,37,0,1,1,207,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,957,8.2,Medium,355,30,0,1,1,822,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,XSS,916,3.8,Low,3,23,0,1,1,235,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,882,7.8,Low,208,16,0,1,0,952,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,334,9.6,Critical,197,14,0,0,1,472,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,CSRF,642,2.0,High,341,10,0,1,1,246,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,969,5.2,High,125,7,1,1,0,35,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,511,2.9,Medium,138,45,1,0,0,130,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,293,7.9,Low,339,37,1,1,1,919,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,SSRF,20,5.8,Medium,25,29,0,1,1,515,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,282,6.3,Critical,68,3,0,1,1,191,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,797,8.0,High,61,15,0,1,1,720,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,1,4.0,High,29,36,1,1,0,823,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,119,9.2,Medium,383,47,0,0,0,776,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,35,5.3,Critical,19,46,0,0,1,643,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,198,1.6,High,171,19,1,0,1,552,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Path Traversal,485,7.0,Critical,450,13,0,1,1,993,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Hardcoded Secret,757,7.9,Critical,74,42,1,0,1,324,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,XSS,59,3.2,Medium,61,21,1,1,1,806,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,837,8.6,Low,427,37,0,1,0,627,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,161,9.1,Medium,153,27,1,1,0,745,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,SSRF,691,2.8,Low,276,29,0,0,0,282,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,206,9.8,Critical,48,20,1,0,1,919,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,12,1.4,Low,211,25,0,0,1,241,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SQL Injection,490,2.0,Critical,343,6,1,1,0,429,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,276,1.8,High,408,36,0,0,0,777,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Path Traversal,693,8.9,High,139,2,1,1,1,451,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,242,6.5,High,110,22,1,0,0,505,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,XSS,216,1.5,Medium,482,32,1,0,1,33,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,251,4.4,Medium,183,16,0,1,1,118,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,811,6.2,Critical,28,18,0,1,0,712,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,126,0.8,High,197,5,1,0,0,511,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,994,8.8,Medium,191,36,0,0,0,868,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,217,8.0,High,315,30,1,0,1,34,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,306,5.1,Medium,389,45,0,1,1,196,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,797,9.7,Low,51,19,1,1,0,297,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,185,4.2,Low,149,23,0,0,1,637,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,39,9.8,High,268,34,1,0,1,347,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,RCE,223,6.7,Critical,50,13,1,1,1,887,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,184,6.3,Medium,388,43,1,0,0,923,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,495,1.7,Medium,246,29,1,1,1,46,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Path Traversal,427,8.8,Low,113,36,0,1,0,803,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,178,4.3,Low,170,22,1,1,0,146,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,919,1.6,Critical,468,47,0,1,1,517,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,428,0.1,Critical,166,36,0,1,0,236,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,294,5.6,Critical,409,9,1,1,1,329,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,852,5.3,High,14,39,0,0,0,849,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,151,7.2,Low,203,19,0,1,0,925,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,XSS,384,8.9,High,288,38,0,1,1,191,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,638,0.8,Low,395,6,1,0,0,883,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,813,7.3,Low,189,47,0,1,0,95,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,308,1.9,Medium,402,15,0,0,0,476,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,336,8.6,Low,155,20,1,1,1,935,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,CSRF,946,8.2,Low,55,9,1,0,1,62,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,CSRF,746,5.4,High,182,32,0,0,0,869,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,RCE,892,7.1,Low,210,4,1,1,0,876,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,375,3.1,High,376,18,0,1,0,244,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,8,4.7,Critical,471,5,0,1,1,968,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,341,8.2,Low,75,20,0,1,1,788,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,Path Traversal,129,4.6,Low,277,23,1,0,0,808,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Path Traversal,776,3.6,High,428,11,0,0,1,442,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,XSS,669,4.9,Critical,133,37,1,0,1,505,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,352,8.3,Medium,343,22,1,1,1,109,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,XSS,358,3.4,Critical,425,4,0,0,1,999,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,517,1.7,High,59,29,1,1,0,608,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,495,7.1,Critical,345,44,1,1,1,412,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,86,8.3,High,489,34,1,0,1,405,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,175,1.0,High,182,13,1,1,0,536,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,802,2.4,Medium,458,42,1,0,0,424,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,193,1.4,Low,406,9,0,1,1,948,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,311,3.5,High,339,42,1,0,1,622,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,119,4.5,High,321,31,0,1,0,686,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,218,7.5,Medium,64,7,0,0,0,472,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,427,6.5,High,327,4,0,0,0,550,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,XSS,970,6.2,Low,260,19,0,1,1,635,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,414,3.5,Medium,193,42,0,1,1,628,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,114,8.4,Low,143,30,0,0,0,931,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,978,4.7,Low,104,31,1,1,1,373,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,145,9.8,Medium,460,35,1,1,0,139,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,538,6.3,High,406,21,1,1,1,93,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,648,1.3,Low,214,31,0,0,0,280,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,303,6.8,Low,242,19,1,0,0,253,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,744,3.3,Low,431,31,1,1,1,397,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,881,6.9,Low,209,32,1,1,1,223,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,588,0.7,Medium,93,2,0,0,1,827,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,987,1.7,Medium,430,10,1,1,1,175,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Path Traversal,840,8.6,Critical,142,2,0,0,1,800,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,CSRF,345,2.3,Critical,434,2,1,1,1,68,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,814,8.4,Low,404,24,0,1,0,611,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,RCE,964,2.8,High,434,17,0,1,1,892,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,801,6.4,Low,112,32,0,0,0,852,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,1,6.9,High,417,16,1,0,0,933,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,147,5.1,Low,375,16,1,0,1,513,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,287,3.1,Critical,59,46,0,0,0,715,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,976,2.1,Critical,43,39,1,1,0,132,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,654,0.3,High,207,31,0,1,1,657,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,53,3.0,Low,268,43,0,0,1,422,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,304,6.5,High,296,24,1,1,1,148,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,69,9.4,Critical,118,1,1,1,0,238,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,XSS,361,8.7,Low,20,11,1,0,1,283,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,602,7.7,Low,222,21,0,1,1,448,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,CSRF,958,7.9,High,166,4,0,1,1,571,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,220,6.6,Medium,131,7,1,0,1,919,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,962,2.6,High,156,26,0,1,0,127,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,704,9.1,Critical,184,47,1,1,1,723,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,Hardcoded Secret,966,6.7,Critical,90,12,0,1,0,914,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,575,5.6,Critical,94,31,1,0,1,492,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,585,1.1,Critical,13,17,1,0,0,404,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SQL Injection,161,4.5,Critical,461,33,0,1,0,712,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,681,4.6,Medium,322,11,1,1,0,885,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,89,8.6,Low,293,28,1,1,1,469,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,SQL Injection,688,5.5,High,433,32,0,0,0,844,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,781,3.8,High,230,1,1,0,1,702,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,585,9.8,Critical,322,47,0,0,1,944,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,XSS,757,1.1,High,292,28,1,1,1,87,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,589,4.2,Critical,438,42,0,1,1,961,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,159,0.4,Medium,26,7,1,1,1,421,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,489,7.4,Medium,75,2,1,1,0,84,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,SQL Injection,971,9.2,Low,456,42,1,1,1,304,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SSRF,324,2.8,Medium,364,24,1,0,0,802,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,610,8.6,Medium,424,4,0,1,0,30,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,Hardcoded Secret,381,2.9,Low,299,44,0,1,0,915,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,102,9.1,High,150,19,0,1,0,180,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,CSRF,494,7.5,Critical,148,26,0,0,0,24,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,XSS,644,8.0,Critical,8,11,0,1,0,220,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,614,0.2,High,29,40,0,0,0,569,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,19,9.6,Low,296,43,0,0,1,95,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,454,7.3,High,474,11,1,0,0,158,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,482,3.0,Medium,414,45,1,0,1,709,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,594,8.3,Low,209,3,1,0,0,381,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,RCE,397,2.8,Low,128,12,1,1,0,489,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,279,8.7,Low,340,3,0,1,0,827,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,SSRF,851,1.1,Critical,116,42,0,0,0,160,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,365,7.0,High,439,27,0,0,1,150,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,331,5.4,Low,144,49,1,0,1,78,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,641,1.0,Low,430,2,0,1,1,269,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,CSRF,344,2.4,Low,318,49,1,1,0,997,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,822,0.1,High,235,16,0,0,0,855,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,455,4.7,Critical,7,2,0,1,0,977,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,601,3.0,Medium,464,30,0,1,1,530,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,725,6.0,Critical,45,20,0,0,0,642,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,655,3.0,Low,443,38,1,0,1,380,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,65,3.0,Critical,239,28,1,1,1,428,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,76,7.4,Critical,440,25,0,1,0,110,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,711,0.5,Medium,432,32,1,1,0,670,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,143,9.0,High,155,10,0,0,1,963,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,917,8.5,High,181,42,0,0,1,667,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,RCE,915,6.7,Critical,215,40,0,0,1,874,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,828,5.9,Critical,88,33,0,1,0,977,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,605,8.9,High,256,13,1,1,0,252,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,RCE,473,1.9,High,73,41,0,0,0,762,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,417,0.8,Medium,419,42,0,1,0,521,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,305,2.4,Low,179,47,1,0,0,858,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,736,7.9,Critical,212,37,0,1,0,564,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SSRF,497,0.3,High,293,16,1,0,1,104,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,291,5.8,Critical,234,45,0,1,1,235,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,940,10.0,Critical,465,22,0,1,1,527,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,CSRF,102,8.6,High,239,20,0,0,0,223,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,986,5.2,Medium,223,43,0,0,1,727,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,267,0.6,Critical,119,27,0,0,0,76,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,867,8.3,Medium,313,41,0,0,0,405,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,968,6.0,High,264,16,1,0,1,621,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,XSS,622,1.1,Low,207,34,0,1,0,21,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,974,0.9,Low,95,32,1,0,1,246,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,842,9.1,Critical,373,26,1,0,1,843,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,XSS,962,6.7,High,222,25,0,0,0,779,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,942,8.3,Medium,366,2,1,0,1,408,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,CSRF,777,8.8,Critical,276,12,0,0,1,416,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,3,5.7,High,380,40,1,1,1,934,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,85,5.2,High,231,9,0,0,1,858,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,794,4.3,Medium,309,12,1,0,0,489,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,328,3.2,Critical,119,26,1,0,1,656,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,816,4.3,High,268,9,0,1,1,231,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,450,7.7,High,433,10,1,1,1,165,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,Hardcoded Secret,454,6.0,High,273,32,0,0,0,663,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,924,8.9,Medium,64,34,0,0,1,437,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Hardcoded Secret,629,4.4,Critical,298,48,0,1,0,167,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,221,6.1,Critical,350,20,0,1,1,986,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,154,6.3,Critical,413,39,0,1,1,425,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,665,5.9,Critical,403,2,1,0,1,335,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,12,7.0,Low,494,1,1,0,0,380,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,133,2.4,Low,11,36,1,1,0,353,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,994,5.1,Critical,98,24,0,0,0,271,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,304,1.0,Medium,434,27,1,1,0,292,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,293,3.8,Low,71,2,1,1,0,859,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,975,4.9,High,364,31,1,1,0,865,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,300,6.5,Low,58,14,1,0,1,238,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,740,9.5,High,290,2,1,1,0,897,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Path Traversal,783,6.0,Critical,251,29,0,1,1,289,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Hardcoded Secret,43,7.4,Low,276,15,0,0,0,879,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,944,5.1,Medium,50,12,1,1,0,299,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,343,6.3,Low,358,37,0,0,0,689,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,326,0.7,Low,216,28,0,1,1,56,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,814,2.5,Low,394,20,1,0,0,984,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SSRF,498,3.6,Critical,416,39,1,1,0,724,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,364,4.7,Medium,52,24,0,1,1,223,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,891,0.5,Low,271,21,1,1,1,767,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,427,1.4,Medium,485,10,0,1,1,33,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,21,2.8,Critical,84,46,0,1,1,330,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,407,9.7,High,387,14,1,0,0,283,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,619,3.3,Low,293,37,0,0,1,565,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,CSRF,336,4.8,Medium,126,18,0,1,0,853,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,815,2.0,Medium,296,24,0,1,0,322,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,117,6.1,Critical,72,14,1,1,1,372,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,124,2.8,Low,296,34,1,0,0,677,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,Hardcoded Secret,399,2.1,High,236,12,1,0,1,389,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,793,5.2,Medium,56,22,1,1,0,720,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,804,0.1,Low,407,6,0,0,1,928,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,715,0.1,High,360,36,1,1,1,990,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,51,2.2,Medium,395,45,1,1,1,683,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,783,0.4,Medium,110,36,1,1,1,916,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,324,1.1,High,192,22,1,0,1,479,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,789,3.4,High,392,14,0,1,1,755,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,141,8.0,Critical,93,16,0,1,0,684,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,470,5.7,Low,350,36,0,1,0,125,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,787,5.1,Low,56,25,1,0,0,614,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,802,2.9,Critical,60,32,1,0,1,51,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,334,9.3,Medium,138,33,0,0,0,805,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,893,4.0,High,39,45,1,1,1,388,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,964,0.9,High,28,36,1,0,0,731,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,373,6.2,High,49,20,0,1,0,215,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,564,1.1,Medium,420,18,0,0,1,475,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,494,3.5,High,125,38,1,1,0,741,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,539,5.1,High,13,3,1,0,0,289,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,669,8.7,Critical,480,23,1,1,0,657,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,751,4.9,Medium,36,32,0,0,1,627,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Hardcoded Secret,156,7.0,Low,101,45,0,0,0,127,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,291,9.9,Critical,282,16,0,0,1,246,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,XSS,648,1.3,Critical,86,5,0,1,0,318,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,144,2.7,Low,4,4,1,0,0,465,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,106,3.9,Critical,223,21,0,0,0,909,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,CSRF,420,4.2,Medium,338,40,0,0,0,484,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,670,4.1,High,448,14,1,0,1,109,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,658,9.1,Medium,166,39,1,1,0,270,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,SSRF,2,7.1,Low,383,31,1,0,1,314,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,945,6.1,Low,344,14,0,1,1,363,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,589,3.1,Critical,383,6,1,1,0,295,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,644,8.2,Medium,376,12,1,1,0,337,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,90,9.6,Medium,471,16,0,1,1,112,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,345,8.2,Low,278,17,0,0,1,72,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,350,0.0,Medium,130,45,1,1,0,696,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,459,6.4,Low,31,23,0,1,0,291,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,263,0.5,Medium,375,14,1,1,0,450,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,351,2.6,Medium,11,7,1,1,0,302,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,108,0.6,Medium,476,46,0,0,0,747,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,586,6.0,Low,302,32,1,0,1,16,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,39,6.9,Critical,96,15,0,1,0,648,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,909,1.1,Medium,190,44,0,1,0,945,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,159,3.8,Low,453,17,0,1,1,101,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Path Traversal,583,4.6,Low,192,41,1,0,0,944,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,CSRF,959,3.7,Medium,486,47,0,0,0,199,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,SSRF,312,1.2,Medium,266,44,0,0,1,880,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,241,4.2,Critical,424,34,1,0,0,485,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,938,7.5,Low,128,5,1,0,1,520,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,RCE,445,0.7,Low,238,45,1,1,0,471,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,298,0.8,High,408,27,1,0,0,62,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,952,3.5,Low,355,23,0,0,0,763,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,RCE,36,9.4,Critical,428,40,0,1,1,495,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,84,6.7,High,112,14,0,0,1,653,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,452,6.8,High,316,15,1,0,1,499,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,886,3.6,High,446,43,1,0,1,987,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,775,5.9,Medium,343,33,0,1,0,373,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,822,0.1,Medium,145,31,1,0,1,121,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,385,6.4,Low,65,35,1,1,1,418,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,172,9.1,High,247,17,0,1,1,16,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,376,6.1,Critical,223,28,0,0,0,751,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,685,8.7,Medium,479,19,1,0,0,677,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,362,7.2,Critical,490,46,1,0,1,206,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,559,1.2,Critical,313,23,1,0,1,844,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,891,9.0,Medium,439,32,0,1,0,885,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Path Traversal,141,0.7,Medium,106,40,0,0,1,744,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,XSS,887,5.3,Medium,181,13,0,1,1,376,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,918,1.4,Medium,184,20,0,1,1,259,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,118,0.1,High,226,35,0,1,1,925,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,277,4.2,High,265,5,1,1,0,604,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,726,3.0,High,278,9,1,1,0,249,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,220,4.9,High,397,29,1,0,0,389,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,905,5.8,Low,89,6,0,1,1,916,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,26,0.4,High,176,25,0,1,1,881,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Path Traversal,521,1.2,Medium,18,31,0,0,0,844,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,SSRF,783,5.6,Critical,371,22,1,0,0,480,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,10,3.4,High,460,2,0,1,0,784,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,984,7.3,Low,424,45,0,1,1,928,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,378,6.5,Medium,401,5,1,0,0,710,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,SQL Injection,633,8.5,Critical,399,27,0,1,1,464,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,637,6.9,Critical,106,25,1,0,1,375,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,682,4.3,High,271,8,0,0,0,299,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,584,6.7,Critical,463,1,0,1,0,883,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,152,2.8,High,319,20,1,0,1,412,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,RCE,720,3.1,High,167,44,1,1,0,67,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,49,7.9,Medium,13,23,1,1,0,530,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,154,4.5,Medium,337,32,1,1,1,313,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,859,8.0,Low,32,11,1,0,1,124,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,CSRF,293,8.2,Medium,393,39,1,1,1,219,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,580,8.6,Medium,40,47,0,0,1,50,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,50,9.2,High,148,24,0,1,1,825,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,XSS,664,4.3,Medium,218,11,1,1,0,182,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,531,3.2,High,219,29,0,0,1,243,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,612,5.8,High,469,26,1,1,1,802,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,60,3.7,Medium,82,16,0,1,1,893,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,167,6.0,Low,333,35,1,0,0,599,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,202,7.1,Low,208,20,0,0,1,629,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,857,6.9,Critical,201,46,0,0,1,802,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Hardcoded Secret,146,3.7,Critical,447,3,0,1,1,412,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,915,1.7,Medium,332,1,0,0,0,48,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,CSRF,676,4.3,Low,428,47,0,0,1,128,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,RCE,970,1.4,High,38,1,1,1,1,344,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,993,8.9,Critical,211,17,1,0,1,345,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,439,3.5,High,444,2,1,1,0,548,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,242,1.5,Critical,327,29,0,1,0,625,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,581,0.3,Medium,249,20,1,0,0,83,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,687,6.5,Low,227,6,0,1,0,200,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,561,6.4,Critical,48,8,0,0,1,333,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Path Traversal,483,3.4,Low,18,29,0,0,1,156,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,CSRF,108,0.7,High,400,48,1,0,0,776,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,226,4.1,Medium,439,33,0,0,0,293,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Path Traversal,673,3.1,Low,295,3,1,1,1,222,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,631,6.8,Medium,196,35,1,1,1,644,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,661,6.1,Low,187,5,0,0,0,727,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,RCE,977,3.6,High,345,27,0,0,0,938,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,662,2.2,High,224,44,1,1,0,761,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,432,9.9,Medium,318,12,1,0,0,403,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,805,4.5,High,488,20,1,1,1,348,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,655,6.9,Critical,397,45,1,0,0,807,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,419,1.4,Low,365,20,1,1,0,31,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,988,4.9,High,337,9,1,1,1,780,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,455,0.3,Critical,497,39,0,1,1,878,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,160,5.1,Medium,229,4,1,0,1,114,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SSRF,523,9.6,Critical,390,19,1,0,1,475,High,Implement network-level restrictions. Validate all URL inputs.
+SonarQube,XSS,650,3.8,Medium,467,38,1,0,1,468,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,969,0.4,Medium,77,27,1,0,0,441,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Hardcoded Secret,590,0.3,Low,188,45,0,0,0,779,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,77,3.9,Low,346,43,0,1,0,725,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,509,1.6,Critical,270,13,1,1,1,831,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,441,0.2,Low,95,13,1,1,0,783,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,Hardcoded Secret,254,7.6,Low,310,22,1,1,1,628,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Path Traversal,921,4.6,Low,132,28,0,1,0,772,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,770,2.9,Critical,39,47,0,1,0,945,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,320,9.0,High,72,45,0,1,1,230,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,XSS,803,1.2,Low,281,22,0,0,1,388,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,263,9.6,Low,333,43,0,1,0,231,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,Hardcoded Secret,597,3.1,Critical,160,19,0,0,0,267,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,658,8.9,High,187,8,1,1,0,722,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SSRF,835,6.0,Low,486,8,0,1,0,376,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,554,8.3,Medium,191,42,0,0,0,779,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,RCE,374,9.8,Critical,422,26,1,1,1,358,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,637,2.9,Low,120,48,0,0,1,234,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,167,9.6,Low,220,26,1,1,1,723,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,937,3.9,Medium,53,23,0,0,1,747,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,753,3.9,Medium,222,43,1,1,0,245,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,459,3.4,Critical,451,13,1,0,0,192,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,999,5.4,Critical,412,28,1,0,1,721,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,SQL Injection,280,1.5,Medium,131,9,1,1,0,878,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,CSRF,700,5.5,Critical,237,20,1,1,1,767,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,302,5.4,Medium,246,19,0,0,0,453,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,SQL Injection,531,7.6,Low,226,48,0,1,0,874,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,580,8.3,Medium,208,39,1,0,0,632,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,218,4.4,Medium,406,12,1,1,1,15,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,102,3.0,High,96,15,1,0,1,245,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,554,2.6,Medium,422,31,0,1,1,136,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,288,1.9,Medium,200,14,1,0,1,113,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,CSRF,167,0.6,High,247,11,1,1,0,758,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,621,3.4,Critical,72,26,1,0,0,924,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,36,2.7,High,318,42,1,0,0,489,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,744,9.7,Low,185,27,0,1,0,164,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,SQL Injection,741,5.6,High,6,11,1,1,1,266,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,353,3.5,Low,206,38,1,0,0,244,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,676,5.8,Critical,32,34,0,0,0,509,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,899,1.4,High,99,43,1,0,0,298,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,73,4.4,High,394,19,1,0,1,519,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,648,6.3,Critical,387,6,0,1,1,561,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,353,4.9,Low,256,46,0,0,1,809,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,XSS,891,4.0,High,187,38,0,0,0,718,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,70,9.9,Low,76,49,1,0,1,794,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,RCE,425,8.8,High,177,42,1,1,0,903,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,999,6.2,Medium,315,28,0,0,0,785,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,708,5.7,High,287,1,0,1,0,578,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,781,6.2,Critical,349,35,0,1,1,307,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SSRF,561,2.0,Critical,255,40,1,1,1,619,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,828,4.0,Low,325,8,1,1,0,146,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SQL Injection,642,0.4,High,190,47,0,1,0,385,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,956,4.8,Low,308,7,1,1,1,96,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,517,5.4,Low,345,11,0,1,1,428,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,428,2.3,Medium,127,39,1,0,1,763,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,539,9.6,Medium,425,4,1,0,0,208,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,160,9.1,Critical,287,25,1,1,0,472,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,149,7.2,Low,254,12,1,0,0,446,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,776,5.3,Critical,213,26,0,0,1,319,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,230,8.7,High,250,38,1,1,1,605,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,712,1.3,Low,84,46,1,0,1,763,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,562,7.9,Low,487,12,0,1,0,290,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,67,1.2,High,383,43,1,0,0,332,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,812,7.9,High,406,37,0,1,1,773,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SSRF,381,2.8,Critical,388,46,0,1,0,711,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,58,8.8,Critical,13,24,1,0,1,960,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,259,9.4,High,45,16,1,0,0,951,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SSRF,342,1.5,Critical,127,13,0,1,1,161,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,838,4.6,High,426,25,0,1,0,311,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,130,9.8,Low,114,4,0,1,0,287,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,RCE,727,4.8,Low,433,11,1,0,1,660,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,172,8.6,Medium,276,32,0,0,1,697,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,770,5.9,Low,205,49,0,0,1,17,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,614,3.8,High,337,7,0,0,1,816,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,CSRF,209,2.9,Critical,438,46,1,1,1,244,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,CSRF,803,2.0,Medium,420,11,0,1,0,684,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,354,7.6,Critical,481,28,1,1,1,570,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,CSRF,471,3.9,High,385,41,1,1,1,311,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,798,5.1,Low,399,23,0,0,1,47,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,116,4.9,Medium,461,45,1,1,0,145,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,264,5.8,High,273,23,0,1,1,831,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,662,8.7,Medium,408,28,1,0,1,430,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,812,9.8,Medium,58,43,1,0,1,228,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,RCE,442,4.1,Low,328,47,0,1,0,357,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,548,8.3,High,498,26,0,0,0,817,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,453,7.6,Critical,219,25,0,1,1,555,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,845,5.7,Medium,109,29,1,0,0,873,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,477,9.6,Medium,279,19,1,0,1,88,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,287,2.0,Critical,174,33,0,1,0,757,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,303,1.1,High,328,36,0,0,1,904,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,311,8.5,Medium,264,14,1,1,0,282,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,208,4.4,Medium,315,14,1,0,1,170,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,618,8.5,Medium,474,35,1,0,1,696,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Hardcoded Secret,446,8.9,High,111,30,0,0,0,887,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,SSRF,670,0.6,High,187,28,1,0,1,317,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,633,8.8,Critical,269,17,0,0,1,383,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,55,4.5,High,423,3,1,1,1,985,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,912,5.1,High,229,16,1,0,1,742,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,12,6.3,Low,497,46,0,1,0,18,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Path Traversal,657,9.3,Critical,156,30,0,0,1,810,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,400,0.2,Medium,473,29,0,1,0,453,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,908,4.8,High,189,45,1,0,0,122,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,648,6.9,Medium,272,15,1,1,0,998,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,980,7.2,Medium,375,46,1,1,0,214,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,XSS,515,6.9,Low,2,25,0,0,1,414,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,656,1.3,High,246,38,1,0,1,707,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,542,3.0,Critical,210,42,0,0,0,862,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,237,3.6,High,401,47,0,1,1,206,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,279,8.0,Medium,286,38,0,1,0,787,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,348,2.8,Critical,359,23,1,0,1,783,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,627,2.1,High,13,25,1,0,1,769,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,104,9.6,Medium,96,42,0,1,1,124,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,630,0.1,Medium,498,7,1,1,0,130,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,517,10.0,Low,221,22,0,0,0,662,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,980,6.8,Low,238,17,0,1,1,74,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,872,8.3,Low,94,18,1,0,0,285,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,248,2.9,Medium,338,49,0,0,0,834,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,364,0.1,High,269,41,0,0,1,248,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,321,7.4,Low,171,10,1,1,0,311,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,633,8.3,High,469,10,0,1,1,401,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,286,7.4,Low,94,7,0,1,1,531,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,149,1.4,Critical,149,48,0,1,1,978,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,84,7.5,Critical,112,38,0,0,0,378,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SSRF,966,7.7,Low,55,27,0,1,1,242,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,RCE,406,6.6,Medium,337,33,0,0,1,204,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,978,7.7,Low,424,1,0,0,0,916,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,456,8.5,Low,467,44,1,0,0,21,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,SQL Injection,743,6.1,Medium,116,34,1,1,0,915,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,800,0.9,Critical,143,4,0,0,0,930,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,161,4.9,High,201,17,0,0,1,698,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,784,0.8,Low,180,4,1,1,0,186,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,460,4.1,Medium,202,43,1,0,0,226,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,550,4.1,Low,364,26,1,1,0,20,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,500,0.7,Medium,479,4,1,1,0,455,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,738,3.5,High,53,1,1,1,1,639,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,XSS,509,1.1,High,471,7,0,0,0,173,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,654,8.1,Critical,384,30,1,1,1,560,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,XSS,804,9.5,Medium,180,9,1,1,0,62,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,481,0.7,Medium,414,35,1,1,1,227,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,663,9.6,Critical,417,8,0,1,1,727,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,114,5.2,Critical,313,24,0,0,0,833,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,749,3.0,Medium,308,19,0,1,1,369,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,578,0.8,Critical,137,36,0,0,0,394,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,361,5.0,High,182,43,0,1,1,65,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,341,7.9,Low,367,27,0,0,1,127,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,770,7.1,High,1,32,1,1,1,909,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,987,0.5,Critical,44,14,0,0,0,262,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,SSRF,761,0.7,Medium,227,18,0,1,1,807,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,969,4.0,Medium,331,28,1,0,0,789,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,449,3.0,High,98,29,0,0,1,812,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,843,2.3,Medium,208,16,1,0,1,854,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,835,2.8,Critical,265,35,1,1,1,189,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,180,8.0,High,288,47,0,0,1,424,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,RCE,702,9.3,Medium,271,31,1,0,1,879,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,CSRF,407,4.1,Low,140,4,1,0,1,244,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,RCE,666,9.1,Low,481,37,1,0,0,864,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,CSRF,196,3.2,Critical,237,17,1,1,0,717,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,466,4.8,Medium,462,39,0,0,0,829,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,311,2.3,Critical,441,48,1,0,1,89,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,262,6.4,High,392,46,0,0,0,656,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,419,9.8,Low,72,26,1,1,1,31,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,RCE,406,6.0,High,155,48,1,0,0,486,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,939,3.6,Medium,190,39,1,0,0,852,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,143,6.5,Critical,268,41,0,0,1,449,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,342,1.2,Critical,321,4,0,0,1,746,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,316,8.9,Critical,107,30,0,1,0,579,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Hardcoded Secret,101,5.0,High,232,30,1,0,0,102,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,244,4.5,Low,42,22,1,0,0,201,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,490,5.9,High,190,11,1,1,0,112,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,12,6.2,High,371,2,1,1,1,405,Medium,Address within 1 month. Include in next security sprint.
+Bandit,RCE,239,0.7,Medium,139,44,0,1,0,16,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SQL Injection,561,6.8,Medium,103,12,1,0,1,649,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,42,2.4,Medium,171,30,0,1,1,576,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,678,7.1,Low,351,36,1,0,0,240,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,594,8.2,Low,273,18,0,1,1,883,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,429,8.0,Medium,481,26,0,0,0,583,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,803,5.5,Medium,416,7,1,1,1,249,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,158,5.2,Low,221,1,1,0,1,99,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,216,1.4,Critical,213,26,0,1,0,241,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,670,7.8,Low,341,23,1,0,1,466,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,462,2.7,Low,424,26,1,0,1,242,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,134,5.0,Low,407,45,0,0,0,363,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,67,2.8,Medium,56,6,0,0,1,342,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,848,1.3,Critical,390,6,0,0,1,448,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,7,6.3,Low,342,44,0,0,0,384,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,948,0.5,Medium,434,8,1,0,0,301,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,Path Traversal,526,7.5,High,102,24,0,0,1,354,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,73,3.2,High,421,22,0,1,1,673,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,SSRF,399,0.0,Low,493,19,0,0,1,437,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,405,5.1,High,192,37,1,0,0,666,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Path Traversal,675,0.5,Critical,499,18,0,1,1,139,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,578,2.8,High,310,31,1,0,1,150,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,859,7.1,High,200,37,0,1,1,424,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,130,0.6,Critical,233,30,0,0,1,102,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,931,8.4,Low,433,42,1,1,1,635,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,SQL Injection,466,0.0,Low,227,33,0,1,1,293,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,206,2.5,Critical,371,10,0,0,0,965,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,788,7.4,Critical,139,37,1,1,0,932,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,Path Traversal,978,3.2,Critical,344,12,0,0,1,664,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,XSS,768,1.0,High,305,30,0,0,1,232,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,266,3.6,Critical,149,27,0,0,0,753,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,537,2.7,Medium,115,39,0,0,0,472,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,962,8.4,High,450,9,1,1,0,554,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,793,3.1,Low,63,21,0,0,1,285,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,253,7.9,Low,104,12,1,1,1,691,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,822,8.9,Low,339,29,0,1,1,149,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,XSS,289,4.3,High,359,33,1,0,1,366,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,164,9.1,Medium,156,43,0,0,0,722,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,XSS,95,3.8,Critical,273,15,1,0,0,32,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,782,9.6,Critical,6,2,0,0,0,977,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,RCE,833,0.9,Low,147,39,1,1,0,745,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,110,6.9,Low,184,44,1,0,1,889,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,336,4.9,High,486,18,0,1,1,279,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,822,3.9,Medium,28,3,1,0,0,868,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,XSS,238,6.3,Critical,450,7,0,0,0,674,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,381,7.0,High,38,43,0,0,0,342,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,436,0.0,Critical,119,18,0,0,0,94,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Hardcoded Secret,899,1.7,Low,293,44,0,1,0,630,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,483,7.1,Critical,371,38,0,1,1,40,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,937,6.7,Medium,244,37,1,0,1,750,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,902,9.7,Medium,68,33,0,1,0,249,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,Path Traversal,25,7.6,Low,214,44,0,1,0,899,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,XSS,653,9.5,Medium,218,31,0,0,0,372,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,117,7.0,Medium,177,11,0,0,1,831,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,RCE,482,3.0,High,299,4,0,1,1,398,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,392,1.1,Critical,164,18,0,1,1,662,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,917,7.8,Low,58,4,1,1,0,677,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,994,6.4,Low,269,49,1,1,1,308,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SSRF,964,0.5,Low,308,34,0,0,0,866,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,537,3.6,Low,58,29,1,0,1,380,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,XSS,79,9.6,Low,288,24,0,1,1,108,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SQL Injection,580,5.0,Medium,465,22,0,0,1,56,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,173,4.3,High,105,2,0,1,0,848,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,956,4.6,Low,228,44,0,1,0,431,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,CSRF,12,2.1,High,247,6,0,0,1,489,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,CSRF,800,3.7,High,188,42,1,1,0,588,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Path Traversal,128,3.7,Medium,494,25,1,1,0,71,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,608,0.5,Low,83,21,1,0,0,118,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,RCE,92,7.7,Medium,186,16,1,0,0,688,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,653,4.2,Low,252,31,0,1,0,558,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,SSRF,543,8.2,Medium,355,14,1,1,0,128,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,846,8.5,High,238,39,0,0,0,607,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,532,2.1,Low,360,28,1,1,1,391,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,658,6.6,Critical,184,32,1,1,0,401,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,XSS,989,4.7,High,284,28,1,0,0,986,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,828,8.8,Critical,385,49,1,0,1,61,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Hardcoded Secret,447,2.2,High,426,9,0,0,1,612,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,390,6.8,Medium,210,45,1,0,1,298,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,672,6.1,Low,304,22,1,0,1,346,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SSRF,861,3.0,High,296,32,0,0,0,819,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,43,1.4,Medium,97,5,0,1,1,213,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,XSS,254,6.5,Low,447,23,1,1,1,889,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,130,7.4,Low,460,5,0,0,0,247,Medium,Address within 1 month. Include in next security sprint.
+ZAP,SQL Injection,60,3.2,High,456,42,0,0,0,391,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,663,6.4,Low,472,32,0,1,0,676,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,467,4.0,High,208,10,1,1,1,761,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,287,7.1,Low,370,39,0,1,0,145,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,517,2.0,Critical,388,15,1,0,1,416,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,XSS,467,8.9,Medium,422,7,1,0,0,517,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,SSRF,930,2.9,Critical,492,29,1,1,0,371,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Path Traversal,778,3.7,High,411,47,1,0,1,390,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,RCE,345,0.6,Critical,137,3,0,0,0,890,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,642,1.1,High,367,19,1,0,0,585,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,CSRF,382,5.2,Low,400,10,0,1,0,644,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,Hardcoded Secret,779,2.7,Low,184,28,1,1,0,263,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,690,8.4,High,76,29,0,0,0,486,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,253,0.1,Critical,287,15,1,0,1,123,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,RCE,927,3.8,Low,472,35,0,0,1,29,Medium,Address within 1 month. Include in next security sprint.
+Bandit,CSRF,56,3.4,Medium,375,6,1,0,0,537,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+Bandit,Path Traversal,463,0.2,Low,142,12,1,0,1,154,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,RCE,457,1.2,Medium,237,47,0,1,1,217,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,983,4.1,Critical,25,38,1,0,1,540,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,83,4.9,Medium,290,13,1,0,0,385,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,905,4.0,Medium,67,29,1,0,0,513,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,99,5.3,Medium,250,19,0,1,0,913,Medium,Implement input validation. Chroot sensitive directories.
+ZAP,Path Traversal,149,6.0,Medium,408,3,1,1,1,175,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,Hardcoded Secret,329,0.1,Low,118,8,1,0,1,559,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,156,4.6,Medium,490,8,0,1,0,190,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,190,9.6,Low,73,20,0,1,0,870,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,494,5.2,Medium,282,47,0,1,1,626,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,XSS,883,6.8,High,404,4,0,1,1,621,Medium,Address within 1 month. Include in next security sprint.
+Bandit,XSS,263,3.1,Critical,448,21,0,1,0,611,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,80,7.7,Medium,360,3,1,1,1,936,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,XSS,400,7.7,High,10,45,1,0,1,821,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,RCE,764,5.2,Medium,211,8,1,1,1,453,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,609,9.8,Medium,323,23,0,1,1,341,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,260,1.3,Medium,152,16,1,0,1,512,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,772,0.2,High,5,13,0,0,1,922,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,615,7.7,Critical,195,3,0,0,1,88,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SQL Injection,552,8.1,High,442,48,1,0,0,594,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Path Traversal,785,1.2,Critical,283,9,0,1,0,944,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,101,2.7,Medium,464,14,0,1,1,947,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,359,0.2,Low,113,13,1,1,1,697,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,380,2.9,Medium,271,7,0,1,1,405,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,RCE,820,7.7,Critical,163,15,0,0,0,617,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,221,5.2,High,460,7,1,1,0,866,Medium,Address within 1 month. Include in next security sprint.
+ZAP,CSRF,820,3.5,Medium,105,38,0,1,1,112,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,420,3.7,High,181,34,0,0,0,411,Medium,Address within 1 month. Include in next security sprint.
+Bandit,Path Traversal,124,0.0,High,44,41,1,1,1,984,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,422,3.0,High,282,22,1,1,1,233,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,CSRF,231,6.5,Medium,175,24,1,1,1,527,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+SonarQube,SSRF,690,9.7,High,162,49,1,1,1,643,High,Implement network-level restrictions. Validate all URL inputs.
+Bandit,Hardcoded Secret,63,8.5,High,471,37,0,0,1,245,High,Rotate all exposed credentials. Implement secrets management.
+Bandit,Hardcoded Secret,485,0.2,Medium,351,44,0,0,1,436,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,Hardcoded Secret,628,9.0,High,434,1,1,0,1,125,High,Rotate all exposed credentials. Implement secrets management.
+SonarQube,SQL Injection,703,7.8,Medium,340,10,0,0,0,172,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SSRF,574,7.8,Critical,140,43,0,0,1,235,High,Implement network-level restrictions. Validate all URL inputs.
+ZAP,CSRF,768,4.6,Critical,471,16,1,1,0,239,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,CSRF,483,4.0,Critical,132,46,1,1,1,191,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,RCE,519,3.0,High,87,8,0,0,1,258,Medium,Address within 1 month. Include in next security sprint.
+ZAP,RCE,155,0.7,Low,176,49,1,0,0,327,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Path Traversal,92,2.3,Low,183,25,1,0,0,974,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,RCE,982,2.5,High,368,12,1,1,1,219,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,526,4.8,Low,129,25,0,0,0,665,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,455,7.5,Medium,246,17,1,1,1,401,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,SSRF,741,4.7,Low,89,26,0,1,1,866,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,Hardcoded Secret,598,0.6,High,66,46,0,1,0,105,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SQL Injection,645,9.6,High,158,48,0,1,0,903,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,RCE,510,9.4,Medium,387,14,1,0,0,867,High,Fix within 1 week. Implement temporary mitigations.
+ZAP,Hardcoded Secret,183,7.9,Critical,378,41,1,1,0,765,Medium,Address within 1 month. Include in next security sprint.
+ZAP,Hardcoded Secret,386,9.9,High,149,36,1,1,1,95,High,Rotate all exposed credentials. Implement secrets management.
+ZAP,SQL Injection,574,5.4,Medium,473,23,1,0,0,424,Medium,Address within 1 month. Include in next security sprint.
+ZAP,XSS,731,9.6,Low,340,43,1,1,0,403,High,Fix within 1 week. Implement temporary mitigations.
+SonarQube,CSRF,405,0.8,Low,433,6,0,1,0,705,Low,Schedule for quarterly review. Document risk acceptance if needed.
+ZAP,SSRF,246,3.7,Medium,116,47,0,1,0,642,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Path Traversal,742,2.3,Medium,214,5,0,0,0,853,Medium,Implement input validation. Chroot sensitive directories.
+SonarQube,XSS,591,2.0,High,469,43,1,1,1,510,Low,Schedule for quarterly review. Document risk acceptance if needed.
+Bandit,RCE,661,1.4,Low,446,25,0,1,1,613,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,Hardcoded Secret,650,6.2,Medium,481,18,0,0,0,591,Medium,Address within 1 month. Include in next security sprint.
+Bandit,SQL Injection,471,7.8,Low,372,13,1,0,0,925,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,SQL Injection,826,5.8,Medium,294,43,1,1,1,142,Medium,Address within 1 month. Include in next security sprint.
+SonarQube,CSRF,888,1.5,Low,253,14,0,1,0,800,Low,Schedule for quarterly review. Document risk acceptance if needed.
+SonarQube,XSS,423,8.1,Critical,143,28,0,0,1,658,High,Fix within 1 week. Implement temporary mitigations.
+Bandit,Path Traversal,901,6.4,High,250,18,1,1,1,323,Medium,Implement input validation. Chroot sensitive directories.
+Bandit,CSRF,65,3.9,Low,366,28,1,0,0,708,Medium,Add CSRF tokens to all forms. Implement SameSite cookies.
+ZAP,Hardcoded Secret,13,6.7,Critical,436,27,1,1,1,230,Medium,Address within 1 month. Include in next security sprint.

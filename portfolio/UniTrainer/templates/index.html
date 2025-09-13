@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Model Trainer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Professional color theme */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #3b82f6;
+                --primary-dark: #2563eb;
+                --secondary: #94a3b8;
+                --background: #0f172a;
+                --card: #1e293b;
+                --text: #f8fafc;
+                --text-light: #94a3b8;
+            }
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+        }
+        
+        .card {
+            background-color: var(--card);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Modern input styling */
+        .input-field {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .input-field:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        /* Professional button */
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        
+        /* Status indicators */
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="card rounded-xl p-8 w-full max-w-lg">
+        <!-- Professional header with status indicator -->
+        <div class="flex items-center justify-center mb-6">
+            <div class="relative">
+                <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                </div>
+                <span class="absolute top-0 right-0 block h-3 w-3 rounded-full bg-green-500 ring-2 ring-white status-pulse"></span>
+            </div>
+            <div class="ml-4">
+                <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Model Trainer</h1>
+                <p class="text-gray-600 dark:text-gray-400">Train and export machine learning models</p>
+            </div>
+        </div>
+        
+        {% if error %}
+        <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 text-red-700 dark:bg-red-900/20 dark:text-red-200 rounded">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-medium">{{ error }}</span>
+            </div>
+        </div>
+        {% endif %}
+        
+        <form method="post" enctype="multipart/form-data" class="space-y-5">
+            <!-- File Upload -->
+            <div class="space-y-1">
+                <label for="file" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Dataset (CSV)</label>
+                <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                    <div class="space-y-1 text-center">
+                        <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="flex text-sm text-gray-600 dark:text-gray-400">
+                            <label for="file" class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none">
+                                <span>Upload a file</span>
+                                <input id="file" name="file" type="file" class="sr-only" accept=".csv" required>
+                            </label>
+                            <p class="pl-1">or drag and drop</p>
+                        </div>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">CSV files up to 10MB</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Target Column -->
+            <div>
+                <label for="target_column" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Target Column</label>
+                <input type="text" id="target_column" name="target_column" required
+                    class="mt-1 input-field block w-full rounded-md shadow-sm py-2 px-3 border focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <!-- Problem Type -->
+            <div>
+                <label for="problem_type" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Problem Type</label>
+                <select id="problem_type" name="problem_type"
+                    class="mt-1 input-field block w-full rounded-md shadow-sm py-2 px-3 border focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="classification">Classification</option>
+                    <option value="regression">Regression</option>
+                </select>
+            </div>
+            
+            <!-- Model Type -->
+            <div>
+                <label for="model_type" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Model Algorithm</label>
+                <select id="model_type" name="model_type"
+                    class="mt-1 input-field block w-full rounded-md shadow-sm py-2 px-3 border focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="random_forest">Random Forest</option>
+                    <option value="svm">Support Vector Machine</option>
+                    <option value="xgboost">XGBoost</option>
+                    <option value="logistic_regression">Logistic Regression</option>
+                    <option value="neural_network">Neural Network</option>
+                </select>
+            </div>
+            
+            <!-- Advanced Options (collapsible) -->
+            <div class="pt-2">
+                <button type="button" onclick="toggleAdvanced()" class="flex items-center text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                    <span>Advanced Options</span>
+                    <svg id="advanced-arrow" class="ml-1 h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="advanced-options" class="hidden mt-3 space-y-4 pl-2 border-l-2 border-gray-200 dark:border-gray-700">
+                    <div>
+                        <label for="test_size" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Test Size (%)</label>
+                        <input type="number" id="test_size" name="test_size" min="10" max="50" value="20"
+                            class="mt-1 input-field block w-full rounded-md shadow-sm py-2 px-3 border focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="random_state" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Random State</label>
+                        <input type="number" id="random_state" name="random_state" value="42"
+                            class="mt-1 input-field block w-full rounded-md shadow-sm py-2 px-3 border focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="pt-4">
+                <button type="submit"
+                    class="btn-primary w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Train Model
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function toggleAdvanced() {
+            const options = document.getElementById('advanced-options');
+            const arrow = document.getElementById('advanced-arrow');
+            
+            if (options.classList.contains('hidden')) {
+                options.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                options.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>

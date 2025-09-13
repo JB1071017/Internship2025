@@ -1,0 +1,32 @@
+tool_name,vulnerability_type,cwe_id,cvss_score,raw_severity,lines_in_function,cyclomatic_complexity,is_core_module,requires_auth,exposed_to_internet,description_length
+ZAP,SQL Injection,89,9.8,Critical,120,15,1,0,1,450
+SonarQube,XSS,79,6.5,High,85,10,0,1,0,320
+Bandit,Hardcoded Secret,259,7.4,High,45,5,1,1,1,280
+ZAP,CSRF,352,4.3,Medium,200,18,0,0,0,380
+SonarQube,RCE,94,8.9,Critical,300,25,1,1,1,500
+Bandit,Insecure Deserialization,502,8.1,High,150,12,1,0,1,420
+ZAP,XXE,611,7.2,High,90,8,0,1,0,350
+SonarQube,Path Traversal,22,5.5,Medium,110,9,0,0,0,290
+Bandit,Command Injection,78,9.1,Critical,60,7,1,1,1,400
+ZAP,SSRF,918,6.7,High,180,14,1,1,1,370
+SonarQube,XSS,79,3.1,Low,55,4,0,1,0,220
+ZAP,SQL Injection,89,8.7,High,210,20,1,0,1,460
+Bandit,Hardcoded Secret,259,5.3,Medium,30,6,0,1,0,190
+ZAP,CSRF,352,2.9,Low,160,11,1,0,0,330
+SonarQube,RCE,94,9.5,Critical,280,30,1,1,1,490
+Bandit,Insecure Deserialization,502,6.8,High,140,9,0,0,1,300
+ZAP,XXE,611,3.2,Low,75,6,0,1,0,310
+SonarQube,Path Traversal,22,4.9,Medium,95,8,0,0,0,250
+Bandit,Command Injection,78,9.3,Critical,70,13,1,1,1,430
+ZAP,SSRF,918,6.1,High,190,17,1,1,1,410
+SonarQube,XSS,79,7.3,High,100,9,0,1,1,310
+ZAP,SQL Injection,89,8.1,High,130,16,1,1,1,470
+Bandit,Hardcoded Secret,259,6.2,Medium,50,4,0,0,0,200
+ZAP,CSRF,352,3.5,Low,170,10,0,0,0,280
+SonarQube,RCE,94,9.7,Critical,310,32,1,1,1,520
+Bandit,Insecure Deserialization,502,7.5,High,160,11,1,0,1,340
+ZAP,XXE,611,4.4,Medium,85,7,0,1,0,275
+SonarQube,Path Traversal,22,5.1,Medium,105,9,0,0,1,295
+Bandit,Command Injection,78,9.0,Critical,65,12,1,1,1,415
+ZAP,SSRF,918,5.8,Medium,175,13,1,1,1,365
+SonarQube,XSS,79,2.8,Low,60,3,0,1,0,210
